@@ -1,0 +1,53 @@
+body {
+    background-image: url(santiago-bernabeu.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    margin-top: 25px;
+}
+.glass-box {
+    width: 930px;
+    height: 530px;
+    background: radial-gradient(rgba(255, 255, 255, 0.6));
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+
+}
+i {
+    position: relative;
+    margin-left: 20px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+i:hover {
+    color: #000;
+}
+.desc{
+    width: 700px;
+    height: 400px;
+    margin-top:10px;
+    margin-left:80px;
+    border: 10px solid #00008B;
+    border-radius: 5%;
+    padding: 15px;
+
+}
+.desc:hover {
+    border: 10px solid #fff;
+}
+.desc h1{
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 1px;
+    text-align: center;
+}
+.desc h3{
+    color: #fff;
+}

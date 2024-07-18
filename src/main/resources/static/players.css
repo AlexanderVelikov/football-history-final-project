@@ -1,0 +1,63 @@
+body {
+    background-image: url(santiago-bernabeu.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    margin-top: 25px;
+}
+
+.glass-box {
+    width: 930px;
+    height: 530px;
+    background: radial-gradient(rgba(255, 255, 255, 0.6));
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    overflow: auto;
+}
+.players{
+    color: #00008B;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #00008B;
+    color: #fff;
+    background-color: #00008B;
+}
+
+th {
+    background-color: #00008B;
+}
+
+tr:hover {
+    background-color: #00008B;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: darkred;
+}
