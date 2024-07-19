@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-image: url(santiago-bernabeu.jpg);
+    background-image: url(../images/santiago-bernabeu.jpg);
     background-size: cover;
     background-position: center;
     display: flex;

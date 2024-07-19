@@ -1,6 +1,7 @@
 package bg.softuni.footballhistory.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -12,8 +13,11 @@ public class Club {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @NotBlank
+    @Column(unique = true)
     private String name;
+    @NotBlank
+    @Column(unique = true)
     private String nationality;
     @Column(name = "founded_on")
     private LocalDate foundedOn;

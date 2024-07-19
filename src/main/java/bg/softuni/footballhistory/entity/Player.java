@@ -1,7 +1,8 @@
 package bg.softuni.footballhistory.entity;
 
 import jakarta.persistence.*;
-import org.hibernate.validator.constraints.URL;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PositiveOrZero;
 
 @Entity
 @Table(name = "players")
@@ -9,10 +10,12 @@ public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @NotBlank
     private String name;
+    @NotBlank
     private String nationality;
     @Column(name = "career_goals")
+    @PositiveOrZero
     private int careerGoals;
 
     @ManyToOne
